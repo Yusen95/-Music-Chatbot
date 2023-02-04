@@ -89,3 +89,50 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+
+- intent: music
+  examples: |
+    - music
+    - do you like music?
+  
+
+- intent: songs
+  examples: |
+    - popular songs
+    - recommend a popular song for me
+    - give me a song
+    - recommend a song similar to this song
+    - recommend a pop music for me
+    - recommend a [pop]{"entity": "TYPE"} music for me 
+    - recommend a [rock]{"entity": "TYPE"} music for me 
+    - recommend a [Hip-Hop & Rap]{"entity": "TYPE"} music for me 
+    - recommend a [country]{"entity": "TYPE"} music for me 
+    - recommend a [R&B]{"entity": "TYPE"} music for me  
+    - recommend a [Folk]{"entity": "TYPE"} music for me 
+    - recommend a [Jazz]{"entity": "TYPE"} music for me 
+    - recommend a [Heavy Metal]{"entity": "TYPE"} music for me 
+    - recommend a [EDM]{"entity": "TYPE"} music for me 
+    - recommend a [Soul]{"entity": "TYPE"} music for me  
+    - recommend a [Gospel]{"entity": "TYPE"} music for me
+    - recommend a [Latin Music]{"entity": "TYPE"} music for me
+    - recommend a [Grime]{"entity": "TYPE"} music for me
+    - recommend a [Trap]{"entity": "TYPE"} music for me
+    - recommend a [Psychedelic Rock]{"entity": "TYPE"} music for me
+    - recommend a [Funk]{"entity": "TYPE"} music for me
+    - recommend a [Reggae]{"entity": "TYPE"} music for me
+    - recommend a [Disco]{"entity": "TYPE"} music for me
+    - recommend a [Punk Rock]{"entity": "TYPE"} music for me
+    - recommend a [Classical]{"entity": "TYPE"} music for me
+    - recommend a [House]{"entity": "TYPE"} music for me
+    - recommend a [Techno]{"entity": "TYPE"} music for me
+    - recommend a [Indie Rock]{"entity": "TYPE"} music for me
+    - recommend a [Grunge]{"entity": "TYPE"} music for me
+    - recommend a [Ambient]{"entity": "TYPE"} music for me
+
+
+- intent: singers
+  examples: |
+    - a popular singer
+    - recommand a popular singer for me
+    - who sings this song?
+    - recommand a singer similar to this singer

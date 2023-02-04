@@ -8,6 +8,9 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
+  - music
+  - songs
+  - singers
 
 responses:
   utter_greet:
@@ -28,6 +31,46 @@ responses:
 
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
+
+  utter_music:
+  - text: "I like music"
+
+  utter_songs:
+  - text: "Here is a {TYPE} song \n Name: {Name} Singer: {Singer} Album: {Album}"
+
+  utter_singers:
+  - text: "Here is the singer XXX you are looking for"
+
+entities:
+- TYPE
+slots:
+  TYPE:
+    type: text
+    mappings: 
+    - type: from_entity
+      entity: TYPE
+  Name:
+    type: text
+    mappings:
+    - type: custom
+      action: action_get_type_name
+  Singer:
+    type: text
+    mappings:
+    - type: custom
+      action: action_get_type_singer
+  Album:
+    type: text
+    mappings:
+    - type: custom
+      action: action_get_type_album
+
+actions:
+- action_get_type_name
+- action_get_type_singer
+- action_get_type_album
+
+
 
 session_config:
   session_expiration_time: 60
